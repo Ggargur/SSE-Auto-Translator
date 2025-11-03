@@ -14,6 +14,7 @@ class ModManager(StrEnum):
 
     ModOrganizer = "Mod Organizer 2"
     Vortex = "Vortex"
+    Limo = "Limo"
 
     @FunctionCache.cache
     def get_api(self) -> ModManagerApi:
@@ -25,9 +26,13 @@ class ModManager(StrEnum):
         match self:
             case ModManager.ModOrganizer:
                 from .modorganizer.modorganizer_api import ModOrganizerApi
-
                 return ModOrganizerApi()
+
             case ModManager.Vortex:
                 from .vortex.vortex_api import VortexApi
-
                 return VortexApi()
+
+            case ModManager.Limo:
+                from .limo.limo_api import LimoApi
+                return LimoApi()
+

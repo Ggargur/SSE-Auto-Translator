@@ -10,7 +10,7 @@
     "empty_translator_api_key_text": "The selected Translator API requires an API key! Please enter one and try again.",
     "game_lang": "Game Language",
     "invalid_path": "Invalid Path",
-    "invalid_path_text": "Path to Portable MO2 Instance is invalid!",
+    "invalid_path_text": "Path to Portable Instance is invalid!",
     "keep_logs_num": "Number of newest log files to keep",
     "log_level": "Log Level",
     "nm_api_key": "Nexus Mods API Key",
